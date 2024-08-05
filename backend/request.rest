@@ -1,0 +1,34 @@
+GET http://localhost:5000/users    
+#get data
+
+###
+GET http://localhost:5000/users/66af2dea34c16c69dce205d1
+#get data by ID
+###
+
+#send data
+POST http://localhost:5000/users/
+Content-type : application/json
+
+{
+    "name" : "Rina cantik",
+    "email" : "@gmail.com",
+    "gender" : "Female"
+
+}
+###  
+
+#ubah data
+PATCH  http://localhost:5000/users/66af2f0a4b24deb0a5df8100
+Content-type : application/json
+
+{
+    "name" : "Billie Eilish",
+    "email" : "@gmail.com",
+    "gender" : "Female"
+
+}
+###
+
+#hapus data
+DELETE   http://localhost:5000/users/66af357a4b24deb0a5df8102
